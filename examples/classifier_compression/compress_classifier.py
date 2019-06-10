@@ -71,7 +71,7 @@ import distiller.apputils as apputils
 import distiller.model_summaries as model_summaries
 from distiller.data_loggers import *
 import distiller.quantization as quantization
-import automated_deep_compression as adc
+import examples.automated_deep_compression as adc
 from distiller.models import ALL_MODEL_NAMES, create_model
 import parser
 import operator
