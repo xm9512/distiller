@@ -110,8 +110,8 @@ class CompressionScheduler(object):
                 self.policies[epoch].append(policy)
             assert len(self.policies[epoch]) > 0
 
-        self.sched_metadata[policy] = {'starting_epoch': starting_epoch,
-                                       'ending_epoch': ending_epoch,
+        self.sched_metadata[policy] = {'starting_epoch': epochs[0],
+                                       'ending_epoch': epochs[-1],
                                        'frequency': frequency}
 
     def on_epoch_begin(self, epoch, optimizer=None, **kwargs):
